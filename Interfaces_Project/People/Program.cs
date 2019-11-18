@@ -22,7 +22,9 @@ namespace People
             //If we ever want to use a new service, we create a new service repo implementing the interface and we change the code only below in the declaration
             //That's the beauty of interfaces
 
-            IPersonRepository list_service = new PersonRepository();
+            //IPersonRepository list_service = new PersonRepository();
+            IPersonRepository list_service = RepositoryFactory.GetRepository("Person");
+
             var personToAdd = new Person { Id = 3, Name = "Mary" };
             list_service.AddPerson(personToAdd);
             IEnumerable<Person> list_service_items = list_service.GetPeople();
