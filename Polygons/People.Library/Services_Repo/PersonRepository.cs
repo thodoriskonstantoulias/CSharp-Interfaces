@@ -5,7 +5,7 @@ using System.Text;
 
 namespace People.Library
 {
-    public class PersonRepository
+    public class PersonRepository : IPersonRepository
     {
         //We create mock data for testing
 
@@ -32,7 +32,7 @@ namespace People.Library
                 new Person { Id = 2, Name = "Kostas", BirthDate = new DateTime(1981, 06, 15), Rating = 8 }
             };
         }
-        public List<Person> GetPeople()
+        public IEnumerable<Person> GetPeople()
         {
             return persons;
         }
@@ -41,6 +41,21 @@ namespace People.Library
         {
             var person =  persons.FirstOrDefault(x => x.Id == id);
             return person;
+        }
+
+        public void AddPerson(Person person)
+        {
+            persons.Add(person);
+        }
+
+        public void UpdatePerson(int id, Person updatedPerson)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeletePerson(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
