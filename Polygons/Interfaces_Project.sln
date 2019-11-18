@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygons", "Polygons\Polygo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygons.Library", "Polygons.Library\Polygons.Library.csproj", "{0950AE0A-A606-403D-A801-863DDBF71274}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People", "People\People.csproj", "{B5840173-E87E-485B-8A03-7059096F682C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People.Library", "People.Library\People.Library.csproj", "{C26F2125-672C-4DD3-8DCD-5CD71B8C3F22}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0950AE0A-A606-403D-A801-863DDBF71274}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0950AE0A-A606-403D-A801-863DDBF71274}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0950AE0A-A606-403D-A801-863DDBF71274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5840173-E87E-485B-8A03-7059096F682C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5840173-E87E-485B-8A03-7059096F682C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5840173-E87E-485B-8A03-7059096F682C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5840173-E87E-485B-8A03-7059096F682C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26F2125-672C-4DD3-8DCD-5CD71B8C3F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26F2125-672C-4DD3-8DCD-5CD71B8C3F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26F2125-672C-4DD3-8DCD-5CD71B8C3F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26F2125-672C-4DD3-8DCD-5CD71B8C3F22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

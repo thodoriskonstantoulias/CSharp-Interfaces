@@ -3,6 +3,8 @@ using System;
 
 namespace Polygons
 {
+    //We create a concrete class , an abstract class and an interface for comparison. We can see that everytime we code 
+    //we must use some kind of abstraction. So abstract classes and interfaces makes the code easier to maintain and extend
     class Program
     {
         static void Main(string[] args)
