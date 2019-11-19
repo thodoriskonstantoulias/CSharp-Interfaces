@@ -23,15 +23,19 @@ namespace People
             //That's the beauty of interfaces
 
             //IPersonRepository list_service = new PersonRepository();
-            IPersonRepository list_service = RepositoryFactory.GetRepository("Person");
+            //IPersonRepository list_service = RepositoryFactory.GetRepository("Person");
+            IPersonReader list_service = RepositoryFactory.GetRepository("Person");
 
-            var personToAdd = new Person { Id = 3, Name = "Mary" };
-            list_service.AddPerson(personToAdd);
+            //var personToAdd = new Person { Id = 3, Name = "Mary" };
+            //list_service.AddPerson(personToAdd);
             IEnumerable<Person> list_service_items = list_service.GetPeople();
             foreach(var person in list_service_items)
             {
                 Console.WriteLine(person.Name);
             }
+
+            //Note : We have to be careful and not use a lot of interfaces because there is the danger that the code will become more complex
+            //Go to implentation is weird when using interfaces. Debugging and step into is a solution that take us to the correct implementation
         }
     }
 }

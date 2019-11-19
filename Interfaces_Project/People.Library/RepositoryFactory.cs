@@ -8,9 +8,9 @@ namespace People.Library
     {
         //We creaty a Factory method to return the desired instance every time 
         //As the program extends we can add here 
-        public static IPersonRepository GetRepository(string repoType)
+        public static IPersonReader GetRepository(string repoType)
         {
-            IPersonRepository repo = null;
+            IPersonReader repo = null;
             switch (repoType)
             {
                 case "Person":
@@ -18,7 +18,6 @@ namespace People.Library
                     break;
                 default:
                     throw new ArgumentException("Invalid repository type");
-
             }
             return repo;
         }

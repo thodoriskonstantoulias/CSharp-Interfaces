@@ -5,7 +5,7 @@ using System.Text;
 
 namespace People.Library
 {
-    public class PersonRepository : IPersonRepository
+    public class PersonRepository : IPersonReader
     {
         //We create mock data for testing
 
@@ -43,19 +43,6 @@ namespace People.Library
             return person;
         }
 
-        public void AddPerson(Person person)
-        {
-            persons.Add(person);
-        }
-
-        public void UpdatePerson(int id, Person updatedPerson)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void DeletePerson(int id)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
